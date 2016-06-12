@@ -79,4 +79,6 @@ Layout file
 >[Tutorial Points]
 >http://www.tutorialspoint.com/android/
 
-** keep Looking for next tutorial **
+
+Next Tutorial
+[Listview (Simple Listview and custom ListView)](https://github.com/yuviii/LearnAndroid/tree/master/ch-2)
