@@ -43,42 +43,42 @@ Before you begin start programming, if you have not read carefully above article
     </LinearLayout>
 Next lets make the ListActivity class 
 
-*ListActivity.java*
-package com.yuvi.myapplication;
-
-import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-
-/**
- * Created by yubraj on 6/12/16.
- */
-
-    public class ListActivity extends AppCompatActivity {
-        @Override
-        protected void onCreate(@Nullable Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.list_activity);
-            // data source:: what data should be published in the listview
-            // adapter :: to populate the data in the listview
-            // listview to show the data for this set the adapter to the listview
-            // for the datasource i will use the array of the name
-            // this is the data source
-            String[] names = {"Ajay","Ajay","Ajay","Ajay","Ajay","Ajay","Ajay","Ajay","Ajay","Ajay","Ajay","Ajay","Ajay","Ajay"};
+    *ListActivity.java*
+    package com.yuvi.myapplication;
     
-            // this is the adapter
-            ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, names);
-            // Listview initialized
-            ListView lv = (ListView) findViewById(R.id.lv);
-            // adapter is set to listview
-            lv.setAdapter(adapter);
+    import android.os.Bundle;
+    import android.support.annotation.Nullable;
+    import android.support.v7.app.AppCompatActivity;
+    import android.widget.ArrayAdapter;
+    import android.widget.ListView;
     
-            // the end
+    /**
+     * Created by yubraj on 6/12/16.
+     */
+    
+        public class ListActivity extends AppCompatActivity {
+            @Override
+            protected void onCreate(@Nullable Bundle savedInstanceState) {
+                super.onCreate(savedInstanceState);
+                setContentView(R.layout.list_activity);
+                // data source:: what data should be published in the listview
+                // adapter :: to populate the data in the listview
+                // listview to show the data for this set the adapter to the listview
+                // for the datasource i will use the array of the name
+                // this is the data source
+                String[] names = {"Ajay","Ajay","Ajay","Ajay","Ajay","Ajay","Ajay","Ajay","Ajay","Ajay","Ajay","Ajay","Ajay","Ajay"};
+        
+                // this is the adapter
+                ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, names);
+                // Listview initialized
+                ListView lv = (ListView) findViewById(R.id.lv);
+                // adapter is set to listview
+                lv.setAdapter(adapter);
+        
+                // the end
+            }
+        
         }
-    
-    }
 
 > If you are confused , just copy the above code and paste it, they are 101% working and tested code.
 
@@ -267,3 +267,4 @@ import android.widget.ListView;
 > Its all done !!! Thanks for reading through this, I hope you have learned about the Listview and adapter. Keep on Looking more tutorials are comming.
 
 Thanks!!!
+
