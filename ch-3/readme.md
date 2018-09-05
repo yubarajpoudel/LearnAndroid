@@ -18,7 +18,7 @@ Storage Option In Android
 
     //Initializing the SharedPreferences    
     
-    SharedPreferencespreferences=PreferenceManager.getDefaultSharedPreferences(ctx);
+    SharedPreferences preferences=PreferenceManager.getDefaultSharedPreferences(ctx);
 
 > Saving the data in the preferences, in the below function key is the name of value and value is the data need to be stored
  
