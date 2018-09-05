@@ -16,7 +16,9 @@ Storage Option In Android
 > The SharedPreferences class provides a general framework that allows you to save and retrieve persistent key-value pairs of primitive data types. You can use SharedPreferences to save any primitive data: booleans, floats, ints, longs, and strings. This data will persist across user sessions (even if your application is killed).
 
 
-    //Initializing the SharedPreferences    SharedPreferencespreferences=PreferenceManager.getDefaultSharedPreferences(ctx);
+    //Initializing the SharedPreferences    
+    
+    SharedPreferencespreferences=PreferenceManager.getDefaultSharedPreferences(ctx);
 
 > Saving the data in the preferences, in the below function key is the name of value and value is the data need to be stored
  
